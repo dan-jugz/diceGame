@@ -1,14 +1,15 @@
-function rollDie(){
-  var die1 = document.getElementById('die1')
-  var die2 = document.getElementById('die2')
-  var status = document.getElementById('status')
-  var d1 = Math.floor(Math.random()*6)+1;
-  var d2 = Math.floor(Math.random()*6)+1;
-  var diceTotal = d1 + d2 ;
-  die1.innerHTML = d1;
-  die2.innerHTML = d2;
-  status.innerHTML = "you rolled " +diceTotal+".";
-  if(d1 == d2){
-    status.innerHTML += "DOUBLES! You get a free turn!!";
-  }  
+//business logic
+var player1="";
+var player2="";
+
+var throwdice = function () {
+  return Math.floor(6*Math.random())+1;
+}
+
+function Player(turn) {
+  this.roll = 0;
+  this.tempscore = 0;
+  this.totalscore = 0;
+  this.turn = turn;
+  this.playerName;
 }
