@@ -29,7 +29,7 @@ Player.prototype.rollone = function() {
 Player.prototype.hold = function () {
   this.totalscore += this.tempscore;
   this.tempscore = 0;
-  this.changeTurn();
+  //this.changeTurn();
   alert(this.playerName + ", your turn is over, pass the mouse!");
 }
 
@@ -46,4 +46,9 @@ player.prototype.newGame = function () {
   this.tempscore = 0;
   this.totalscore = 0;
   this.playerName ="";
+}
+
+var clearValues = function(){
+  $(".player1Name").val("");
+  $(".player2Name").val("");
 }
