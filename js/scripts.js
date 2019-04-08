@@ -87,4 +87,11 @@ $(document).ready(function() {
      $(".start-menu").show();
    });
 
+    $("button#player1-roll").click(function(event){
+      player1.roll = throwdice();
+      $("#die-roll-1").text(player1.roll);
+      player1.rollone();
+      $("#round-total-1").text(player1.tempscore);
+    });
+
 });
