@@ -49,4 +49,4 @@ for errors, contact the developer at njugunadaniel364@gmail.com
 
 *This software is licensed under the MIT license.*
 
-Copyright (c) 2016 **_Daniel Njuguna_**
+Copyright (c) 2019 **_Daniel Njuguna_**
