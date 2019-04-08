@@ -1,6 +1,10 @@
-.player-console {
-  display: none;
-}
 body {
   background-image: url("/img/dice.gif");
 }
+h2 {
+  font-weight: bold;
+  color: inherit;
+}
+@media (min-width: 800px) {
+  float: left;
+  width: 60%;
